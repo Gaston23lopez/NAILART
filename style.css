@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #000 ;
+    background-image: url(./images/fondito3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+ color: #f638e9;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* NAVBAR PAGINA TALLERES / links talleres */
+
+.navbar .links2 {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 40px;
+}
+
+
+
+
+/* HAMBURGUESA */
+
+.hamburguesa {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hamburguesa.open {
+    height: 230px;
+}
+
+.hamburguesa li {
+    padding: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HAMBURGUESA TALLERES */
+
+.hamburguesa2 {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hamburguesa2.open {
+    height: 280px;
+}
+
+.hamburguesa2 li {
+    padding: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+/* MARU welcome */
+
+section#maru{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#maru h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* SECTION MARU TALLERES */
+
+section#maru2{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: -60px;
+}
+
+#maru2 h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width: 992px){
+    .navbar .links {
+        display: none;
+    }
+
+    .navbar .links2{
+        display: none;
+    }
+
+.navbar .toggle_btn {
+    display: block;
+}
+
+.hamburguesa {
+    display: block;
+}
+
+.hamburguesa2 {
+    display: block;
+}
+
+}
+
+@media(max-width: 576px){
+    .hamburguesa {
+        left: 2rem;
+        width: unset;
+    }
+
+    .hamburguesa2 {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+
+
+
+
+
+/* GALERIA */
+
+.container_galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+
+}
+
+.container_galeria .encabezado {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+
+.container_galeria .encabezado h3 {
+    font-size: 2em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.container_galeria .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+      
+}
+
+.container_galeria .box .columna {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    
+    
+
+}
+
+.container_galeria .box img {
+    width: 100%;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
+
+/* GALERIA RESPONSIVE */
+
+@media only screen and (max-width: 769px){    
+
+
+.container_galeria .box {
+    flex-direction: column;}
+}
+
+.container_galeria .box .columna {
+    width: 100%;
+}
+
+
+
+/* PRUEBA FORM */
+
+.form {
+padding-top: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/* FOOTER */
+
+
+
+
+.footer {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+    position: relative;
+    height: 60px;
+    margin-top: -60px;
+    
+    
+}
+
+
+.fa-instagram {
+    font-size: 20px;
+    color: #fff;
+}
+
+.fa-instagram:hover {
+    color: #f638e9;
+   }
+
+.fa-tiktok {
+    font-size: 20px;
+    color: #fff;
+}
+
+.fa-tiktok:hover {
+    color: #f638e9;
+   }
+
+.fa-youtube {
+    font-size: 20px;
+    color: #fff;
+}
+
+.fa-youtube:hover {
+    color: #f638e9;
+   }

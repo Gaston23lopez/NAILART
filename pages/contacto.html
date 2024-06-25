@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarinaGonzalez.Nailart</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../images/logo.png" type="logo">
+</head>
+<body>
+    
+    <header>
+
+        <div class="navbar">
+            <div class="logo"> <a href="#">Marina Gonzalez</a></div>
+
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./talleres.html">Talleres</a></li>
+                <li><a href="./alumnas.html">Alumnas</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        
+                <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+                </div>
+        </div>
+
+        <div class="hamburguesa">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./talleres.html">Talleres</a></li>
+                <li><a href="./alumnas.html">Alumnas</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+        </div>
+        
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.hamburguesa')
+    
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        
+        }
+
+    </script>
+
+<main>
+    <section id="maru">
+        <h1>Contacto</h1>
+        <p>
+            Nos interesa conocerte y saber tú opinion al respecto, saber que es lo que te gustaria, contenido que desees ver o cambios que harias. Recorda que tú opinion es de gran interes!
+        </p>
+  
+
+<br>
+
+<div class="form">
+    <form action="form.php" method="POST">
+  
+    <label for="">Nombre</label>
+    <input type="text" name="nombre" id="nombre">
+
+    <label for="">Mail</label>
+    <input type="text" name="mail" id="mail">
+    
+
+
+    <p>comentarios</p>
+    <textarea name="" id="" cols="30" rows="10">
+
+    </textarea>
+
+    <p>acepta los terminos y condiciones</p>
+
+    <input type="checkbox" name="" id="">
+
+    <input type="submit" value="enviar">
+
+
+    </form>
+</div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+
+    <a href="https://www.instagram.com/marinagonzalez.nailart?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    
+    
+    <a href="https://www.tiktok.com/@marina__gonzalez?_t=8h0ltYhUEOz&_r=1">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+    
+    <a href="https://www.youtube.com/@marinagonzalez.nailart">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+
+
+</footer>
+    
+</body>
+</html>

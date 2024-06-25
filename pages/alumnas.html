@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarinaGonzalez.Nailart</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../images/logo.png" type="logo">
+</head>
+<body>
+    
+    <header>
+
+        <div class="navbar">
+            <div class="logo"> <a href="#">Marina Gonzalez</a></div>
+
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./talleres.html">Talleres</a></li>
+                <li><a href="./alumnas.html">Alumnas</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        
+                <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+                </div>
+        </div>
+
+        <div class="hamburguesa">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./talleres.html">Talleres</a></li>
+                <li><a href="./alumnas.html">Alumnas</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+        </div>
+        
+    </header>
+
+
+    <main>
+        <section id="maru">
+            <h1>Alumnas</h1>
+            <p>
+                proximamente subiremos la galeria de imagenes <br> con trabajos hechos por alumnas
+            </p>
+        </section>
+
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.hamburguesa')
+    
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        
+        }
+    
+        
+    
+    </script>
+    
+    <footer class="footer">
+
+
+        <a href="https://www.instagram.com/marinagonzalez.nailart?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        
+        
+        <a href="https://www.tiktok.com/@marina__gonzalez?_t=8h0ltYhUEOz&_r=1">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        
+        <a href="https://www.youtube.com/@marinagonzalez.nailart">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+
+    </footer>
+    
+</body>
+</html>
